@@ -32,8 +32,8 @@ public class InfoActivity extends AppCompatActivity {
 public void createMapIntent(View v) {
 
         address_view=(TextView)findViewById(R.id.text_view_address);
-        Uri infoUri = Uri.parse("geo:0,0?q=618 E South St Orlando, FL 32801 ");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, infoUri);
+        Uri.parse("geo:0,0?q=618 E South St Orlando, FL 32801 ");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW);
         mapIntent.setPackage("com.google.android.apps.maps");
     if(mapIntent.resolveActivity(getPackageManager())!=null) {
 
