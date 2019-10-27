@@ -12,9 +12,7 @@ import com.squareup.picasso.Picasso;
 
 
 public class InfoActivity extends AppCompatActivity {
-
-    TextView  address_view=(TextView)findViewById(R.id.text_view_address);
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
