@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso;
 
 public class InfoActivity extends AppCompatActivity {
 
-    TextView address_view;
+    TextView  address_view=(TextView)findViewById(R.id.text_view_address);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,6 @@ public class InfoActivity extends AppCompatActivity {
 
 public void createMapIntent(View v) {
 
-        address_view=(TextView)findViewById(R.id.text_view_address);
         Uri.parse("geo:0,0?q=618 E South St Orlando, FL 32801 ");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW);
         mapIntent.setPackage("com.google.android.apps.maps");
